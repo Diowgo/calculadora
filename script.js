@@ -6,10 +6,26 @@ function multiply(a, b) { return a * b }
 
 function divide(a, b) { return a / b }
 
+let displayValue = "0";
+
+const display = document.querySelector("#display");
+display.textContent = displayValue;
+
 
 
 function returnParsedExpression(expression) {
-    return /^(?<numberA>\d{1,}).(?<operation>[+-/*]{1}).(?<numberB>\d+)$/g.exec(expression).groups
+    return /^(?<numberA>\d{0,})(?<operation>[+-/*]{0,1})(?<numberB>\d{0,})$/g.exec(expression).groups
+}
+
+function returnCalculationState(expression) {
+    expression = returnParsedExpression(expression);
+    if (expression.operation == "") {
+        return "hasA"
+    }
+    if (expression.numberB == "") {
+        return "hasOp"
+    }
+    return "hasB"
 }
 
 function doOperation(expression) {

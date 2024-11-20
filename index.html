@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calculator">
-        <div class="screen"></div>
+        <div class="screen">
+            <p id="display"></p>
+        </div>
         <div class="keys">
-            <div class="special">
-                <div class="clear">Clear</div>
-                <div class="flipSignal">+/-</div>
-                <div class="percentage">%</div>
+            <div class="column-1">
+                <div class="special">
+                    <div class="clear key">Clear</div>
+                    <div class="flipSignal key">+/-</div>
+                    <div class="percentage key">%</div>
+                </div>
+                <div class="numbers">
+                    <div class="number key" id="number-0">0</div>
+                    <div class="number key" id="number-1">1</div>
+                    <div class="number key" id="number-2">2</div>
+                    <div class="number key" id="number-3">3</div>
+                    <div class="number key" id="number-4">4</div>
+                    <div class="number key" id="number-5">5</div>
+                    <div class="number key" id="number-6">6</div>
+                    <div class="number key" id="number-7">7</div>
+                    <div class="number key" id="number-8">8</div>
+                    <div class="number key" id="number-9">9</div>
+                    <div class="number key" id="dot">.</div>
+                </div>
             </div>
-            <div class="numbers">
-                <div class="number" id="0">0</div>
-                <div class="number" id="1">1</div>
-                <div class="number" id="2">2</div>
-                <div class="number" id="3">3</div>
-                <div class="number" id="4">4</div>
-                <div class="number" id="5">5</div>
-                <div class="number" id="6">6</div>
-                <div class="number" id="7">7</div>
-                <div class="number" id="8">8</div>
-                <div class="number" id="9">9</div>
-            </div>
-            <div class="dot">
-                <div class="dot"></div>
-            </div>
-            <div class="operations">
-                <div class="equal">=</div>
-                <div class="plus">+</div>
-                <div class="minus">-</div>
-                <div class="times">x</div>
-                <div class="divide">/</div>
+            <div class="column-2">
+                <div class="operations">
+                    <div class="equal key">=</div>
+                    <div class="plus key">+</div>
+                    <div class="minus key">-</div>
+                    <div class="times key">x</div>
+                    <div class="divide key">/</div>
+                </div>
             </div>
         </div>
     </div>

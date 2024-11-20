@@ -1,0 +1,82 @@
+.key {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+
+
+.keys {
+    display: flex;
+    width: 400px;
+}
+
+.column-1 {
+    width: 300px;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.special {
+    display: flex;
+}
+
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#number-9 {
+    order: 3;
+}
+
+#number-8 {
+    order: 2;
+}
+
+#number-7 {
+    order: 1;
+}
+
+#number-6 {
+    order: 6;
+}
+
+#number-5 {
+    order: 5;
+}
+
+#number-4 {
+    order: 4;
+}
+
+#number-3 {
+    order: 9;
+}
+
+#number-2 {
+    order: 8;
+}
+
+#number-1 {
+    order: 7;
+}
+
+#number-0 {
+    order: 10;
+    flex: 1 1 200px
+}
+
+#dot {
+    order: 11;
+}
+
+.screen {
+    width: 400px;
+    height: 100px;
+    background-color: #ccc;
+}
